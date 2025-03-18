@@ -129,9 +129,7 @@ insert into Inventory (ProductID, QuantityInStock, LastStockUpdate) values
 
 select FirstName,LastName,Email from Customers
 
---2. Write an SQL query to list all orders with 
- their order dates and corresponding customer
- names.
+--2. Write an SQL query to list all orders with their order dates and corresponding customer names.
 
  
 
