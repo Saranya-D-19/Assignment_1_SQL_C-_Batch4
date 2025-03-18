@@ -1,3 +1,4 @@
+
 --Task:1. Database Design: 
 
 create database TechShop
@@ -128,14 +129,57 @@ insert into Inventory (ProductID, QuantityInStock, LastStockUpdate) values
 
 select FirstName,LastName,Email from Customers
 
---2. Write an SQL query to list all orders with their order dates and corresponding customer names.
+--2. Write an SQL query to list all orders with 
+ their order dates and corresponding customer
+ names.
+
  
 
--- 3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
+-- 3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
+
 insert into Customers (FirstName, LastName, Email,Address) values ('Shraven','Ganesh','shra@gmail.com','Chennai')
 
 --4. Write an SQL query to update the prices of all electronic gadgets in the "Products" table by increasing them by 10%.
 
 update Products set price= price+(price/10)
 
--- 5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables. Allow users to input the order ID as a parameter.-- 6. Write an SQL query to insert a new order into the "Orders" table. Include the customer ID, order date, and any other necessary information.insert into Orders (CustomerID, OrderDate, TotalAmount) values (13, '2025-03-11', 1999)-- 7. Write an SQL query to update the contact information (e.g., email and address) of a specific customer in the "Customers" table. Allow users to input the customer ID and new contact information.update Customers set email='shraven@gmail.com',Address='Mumbai' where CustomerID=13-- 8. Write an SQL query to recalculate and update the total cost of each order in the "Orders" table based on the prices and quantities in the "OrderDetails" table-- 9. Write an SQL query to delete all orders and their associated order details for a specific customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID as a parameter.-- 10. Write an SQL query to insert a new electronic gadget product into the "Products" table, including product name, category, price, and any other relevant detailsinsert into Products (ProductName, Description, Price) values ('Tab', 'High-quality visual eith easy accessibility.', 19888)--11. Write an SQL query to update the status of a specific order in the "Orders" table (e.g., from "Pending" to "Shipped"). Allow users to input the order ID and the new status.alter table Orders alter column status varchar(50)insert into Orders (status) values ('shipped') --12. Write an SQL query to calculate and update the number of orders placed by each customer in the "Customers" table based on the data in the "Orders" table.--Task 3. Aggregate functions, Having, Order By, GroupBy and Joins:
+-- 5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables. Allow users to input the order ID as a parameter.
+
+
+-- 6. Write an SQL query to insert a new order into the "Orders" table. Include the customer ID, order date, and any other necessary information.
+
+insert into Orders (CustomerID, OrderDate, TotalAmount) values (13, '2025-03-11', 1999)
+
+-- 7. Write an SQL query to update the contact information (e.g., email and address) of a specific customer in the "Customers" table. Allow users to input the customer ID and new contact information.
+
+update Customers set email='shraven@gmail.com',Address='Mumbai' where CustomerID=13
+
+-- 8. Write an SQL query to recalculate and update the total cost of each order in the "Orders" table based on the prices and quantities in the "OrderDetails" table
+
+
+
+-- 9. Write an SQL query to delete all orders and their associated order details for a specific customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID as a parameter.
+
+
+
+-- 10. Write an SQL query to insert a new electronic gadget product into the "Products" table, including product name, category, price, and any other relevant details
+
+insert into Products (ProductName, Description, Price) values ('Tab', 'High-quality visual eith easy accessibility.', 19888)
+
+--11. Write an SQL query to update the status of a specific order in the "Orders" table (e.g., from "Pending" to "Shipped"). Allow users to input the order ID and the new status.
+
+alter table Orders 
+alter column status varchar(50)
+
+insert into Orders (status) values ('shipped') 
+
+--12. Write an SQL query to calculate and update the number of orders placed by each customer in the "Customers" table based on the data in the "Orders" table.
+
+
+
+--Task 3. Aggregate functions, Having, Order By, GroupBy and Joins:
+
+
+
+
+
